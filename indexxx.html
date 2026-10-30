@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portofolio Nazwa Aqilah Azzahra, mahasiswa S1 Sistem Informasi UNESA.">
+<title>Portfolio | Nazwa Aqilah Azzahra</title>
+<style>
+:root{--bg:#fafafa;--white:#fff;--text:#242424;--muted:#5f5f5f;--line:#e8e8e8;--soft:#f2f2f2}
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{font-family:Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid #2f5bea;outline-offset:3px}
+.container{width:88%;max-width:1080px;margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(250,250,250,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav{min-height:72px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:21px;font-weight:bold;letter-spacing:2px}
+.nav-links{display:flex;align-items:center;gap:24px}
+.nav-links a{color:var(--muted);font-size:13px;transition:.3s}
+.nav-links a:hover{color:var(--text)}
+.language-btn{background:#fff;border:1px solid var(--line);padding:7px 13px;border-radius:20px;cursor:pointer}
+section{padding:85px 0}
+.section-line{border-top:1px solid var(--line)}
+.section-title{color:var(--muted);font-size:11px;letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(40px,7vw,72px);line-height:1.15;letter-spacing:-2px;margin:20px 0}
+h2{font-size:35px;letter-spacing:-1px;margin:12px 0 28px}
+h3{font-size:17px;margin-bottom:8px}
+p{color:var(--muted)}
+.hero{min-height:580px;display:flex;align-items:center;justify-content:space-between;gap:50px}
+.hero-content{flex:1;max-width:700px}
+.hero-content p{max-width:550px;font-size:16px}
+.button{display:inline-block;background:var(--text);color:#fff;padding:11px 20px;border-radius:5px;margin-top:25px;font-size:13px;transition:.3s}
+.button:hover{background:#555;transform:translateY(-2px)}
+.profile-photo{width:260px;height:260px;border-radius:50%;object-fit:cover;object-position:50% 28%;border:5px solid #fff;box-shadow:0 5px 25px rgba(0,0,0,.08);flex-shrink:0}
+.about-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:60px}
+.about-info{background:var(--soft);padding:24px;border-radius:7px;margin-top:25px}
+dl{display:grid;grid-template-columns:120px 1fr;gap:4px 14px;font-size:14px;margin-bottom:18px}
+dt{color:var(--muted)}dd{color:var(--text);font-weight:bold}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:24px;transition:.3s}
+.card:hover{border-color:#bdbdbd;transform:translateY(-4px)}
+.card p{font-size:14px}
+.tags{margin-top:20px}
+.tag{display:inline-block;background:var(--soft);color:#555;padding:5px 10px;border-radius:4px;font-size:12px;margin:4px}
+.achievement{display:grid;grid-template-columns:100px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.year{color:var(--muted);font-size:14px}
+.achievement .meta{font-size:13px;margin-bottom:6px}
+.contact-box{background:var(--white);border:1px solid var(--line);border-radius:8px;padding:30px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.contact-links{display:flex;gap:20px;flex-wrap:wrap}
+.contact-links a{font-size:13px;border-bottom:1px solid #aaa}
+footer{border-top:1px solid var(--line);padding:24px 0;text-align:center;color:var(--muted);font-size:12px}
+@media(max-width:768px){
+.hero{flex-direction:column-reverse;justify-content:center;align-items:flex-start;gap:30px;padding-top:60px}
+.profile-photo{width:190px;height:190px;align-self:center}
+.about-grid,.cards{grid-template-columns:1fr}
+.nav-links{gap:10px}.nav-links a{font-size:11px}
+section{padding:60px 0}}
+@media(max-width:480px){
+nav{flex-wrap:wrap;padding:14px 0;gap:12px}
+.nav-links{width:100%;justify-content:space-between}
+.achievement{grid-template-columns:1fr;gap:5px}
+dl{grid-template-columns:100px 1fr}}
+</style>
+</head>
+<body>
+
+<header>
+<nav class="container">
+  <a href="#home" class="logo">NA.</a>
+  <div class="nav-links">
+    <a href="#about" data-en="About" data-id="Tentang">Tentang</a>
+    <a href="#skills" data-en="Skills" data-id="Keahlian">Keahlian</a>
+    <a href="#achievement" data-en="Achievement" data-id="Pencapaian">Pencapaian</a>
+    <a href="#contact" data-en="Contact" data-id="Kontak">Kontak</a>
+    <button class="language-btn" id="languageToggle" aria-label="Ganti bahasa / Switch language">EN</button>
+  </div>
+</nav>
+</header>
+
+<main>
+
+<section class="hero container" id="home">
+  <div class="hero-content">
+    <div class="section-title" data-en="Personal Portfolio" data-id="Portofolio Pribadi">Portofolio Pribadi</div>
+    <h1><span data-en="Hello, I'm" data-id="Halo, saya">Halo, saya</span><br>Nazwa Aqilah Azzahra.</h1>
+    <p data-en="An Information Systems student interested in technology, creative work, and continuous learning." data-id="Mahasiswa Sistem Informasi yang tertarik pada teknologi, karya kreatif, dan proses belajar hal baru.">Mahasiswa Sistem Informasi yang tertarik pada teknologi, karya kreatif, dan proses belajar hal baru.</p>
+    <a href="#about" class="button" data-en="Explore My Portfolio" data-id="Jelajahi Portofolio Saya">Jelajahi Portofolio Saya</a>
+  </div>
+  <img src="profil%20nazwa.jpeg" alt="Foto profil Nazwa" class="profile-photo">
+</section>
+
+<section class="section-line" id="about">
+<div class="container about-grid">
+  <div>
+    <div class="section-title" data-en="01 / About Me" data-id="01 / Tentang Saya">01 / Tentang Saya</div>
+    <h2 data-en="Get to Know Me" data-id="Tentang Saya">Tentang Saya</h2>
+  </div>
+  <div>
+    <p data-en="I am an undergraduate Information Systems student at Universitas Negeri Surabaya (UNESA). I enjoy exploring new things, collaborating with others, and developing my skills step by step, especially in technology and creative fields." data-id="Saya merupakan mahasiswa S1 Sistem Informasi di Universitas Negeri Surabaya (UNESA). Saya senang mengeksplorasi hal baru, bekerja sama dengan orang lain, dan mengembangkan kemampuan secara bertahap, terutama dalam bidang teknologi dan kreativitas.">Saya merupakan mahasiswa S1 Sistem Informasi di Universitas Negeri Surabaya (UNESA). Saya senang mengeksplorasi hal baru, bekerja sama dengan orang lain, dan mengembangkan kemampuan secara bertahap, terutama dalam bidang teknologi dan kreativitas.</p>
+
+    <div class="about-info">
+      <h3 data-en="Personal Information" data-id="Informasi Pribadi">Informasi Pribadi</h3>
+      <dl>
+        <dt data-en="Name" data-id="Nama">Nama</dt><dd>Nazwa Aqilah Azzahra</dd>
+        <dt>NIM</dt><dd>26051214230</dd>
+        <dt data-en="Program" data-id="Program Studi">Program Studi</dt><dd>S1 Sistem Informasi</dd>
+        <dt data-en="Faculty" data-id="Fakultas">Fakultas</dt><dd data-en="Faculty of Engineering" data-id="Fakultas Teknik">Fakultas Teknik</dd>
+        <dt data-en="University" data-id="Universitas">Universitas</dt><dd>Universitas Negeri Surabaya (UNESA)</dd>
+        <dt data-en="Location" data-id="Domisili">Domisili</dt><dd>Sidoarjo, Jawa Timur</dd>
+      </dl>
+      <h3 data-en="Education" data-id="Pendidikan">Pendidikan</h3>
+      <p>Universitas Negeri Surabaya — Sistem Informasi</p>
+      <p>SMA Hang Tuah 2 Sidoarjo — IPS</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section-line" id="skills">
+<div class="container">
+  <div class="section-title" data-en="02 / What I Can Do" data-id="02 / Yang Bisa Saya Lakukan">02 / Yang Bisa Saya Lakukan</div>
+  <h2 data-en="My Skills" data-id="Keahlian Saya">Keahlian Saya</h2>
+  <div class="cards">
+    <div class="card"><h3 data-en="Design" data-id="Desain">Desain</h3><p data-en="Able to create simple visual designs using Canva." data-id="Mampu membuat desain visual sederhana menggunakan Canva.">Mampu membuat desain visual sederhana menggunakan Canva.</p></div>
+    <div class="card"><h3 data-en="Video Editing" data-id="Editing Video">Editing Video</h3><p data-en="Familiar with basic video editing using CapCut." data-id="Mengenal proses penyuntingan video dasar menggunakan CapCut.">Mengenal proses penyuntingan video dasar menggunakan CapCut.</p></div>
+    <div class="card"><h3 data-en="Programming Tools" data-id="Tools Pemrograman">Tools Pemrograman</h3><p data-en="Currently learning programming and familiar with Visual Studio Code." data-id="Sedang mempelajari pemrograman dan mengenal penggunaan Visual Studio Code.">Sedang mempelajari pemrograman dan mengenal penggunaan Visual Studio Code.</p></div>
+    <div class="card"><h3 data-en="Teamwork" data-id="Kerja Sama Tim">Kerja Sama Tim</h3><p data-en="Experienced in collaborating as part of a marching band team." data-id="Memiliki pengalaman bekerja sama sebagai bagian dari tim marching band.">Memiliki pengalaman bekerja sama sebagai bagian dari tim marching band.</p></div>
+    <div class="card"><h3>English</h3><p data-en="Basic proficiency in English." data-id="Memiliki kemampuan dasar dalam bahasa Inggris.">Memiliki kemampuan dasar dalam bahasa Inggris.</p></div>
+    <div class="card"><h3>Mandarin</h3><p data-en="Basic proficiency in Mandarin Chinese." data-id="Memiliki kemampuan dasar dalam bahasa Mandarin.">Memiliki kemampuan dasar dalam bahasa Mandarin.</p></div>
+  </div>
+  <div class="tags">
+    <span class="tag">Canva</span><span class="tag">CapCut</span><span class="tag">Visual Studio Code</span>
+    <span class="tag">English — Basic</span><span class="tag">Mandarin — Basic</span>
+  </div>
+</div>
+</section>
+
+<section class="section-line" id="achievement">
+<div class="container">
+  <div class="section-title" data-en="03 / Achievement" data-id="03 / Pencapaian">03 / Pencapaian</div>
+  <h2 data-en="My Achievements" data-id="Pencapaian Saya">Pencapaian Saya</h2>
+
+  <div class="achievement">
+    <div class="year">2025</div>
+    <div>
+      <h3 data-en="1st Place — JCFF 2025" data-id="Juara 1 — JCFF 2025">Juara 1 — JCFF 2025</h3>
+      <p class="meta" data-en="Organizer: JCFF 2025 · East Java Provincial Level" data-id="Penyelenggara: JCFF 2025 · Tingkat Provinsi Jawa Timur">Penyelenggara: JCFF 2025 · Tingkat Provinsi Jawa Timur</p>
+      <p data-en="Won 1st place in a provincial-level marching band competition in East Java." data-id="Meraih Juara 1 dalam kompetisi marching band tingkat Provinsi Jawa Timur.">Meraih Juara 1 dalam kompetisi marching band tingkat Provinsi Jawa Timur.</p>
+    </div>
+  </div>
+
+  <div class="achievement">
+    <div class="year">2025</div>
+    <div>
+      <h3>Delta Marching Open Festival XIX</h3>
+      <p class="meta" data-en="Organizer: Delta Marching Open Festival XIX · National Level · Color Guard" data-id="Penyelenggara: Delta Marching Open Festival XIX · Tingkat Nasional · Color Guard">Penyelenggara: Delta Marching Open Festival XIX · Tingkat Nasional · Color Guard</p>
+      <p data-en="Participated as a Color Guard member and contributed to the team's achievement at a national-level competition." data-id="Berpartisipasi sebagai anggota Color Guard dan turut berkontribusi dalam pencapaian tim pada kompetisi tingkat nasional.">Berpartisipasi sebagai anggota Color Guard dan turut berkontribusi dalam pencapaian tim pada kompetisi tingkat nasional.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section-line" id="contact">
+<div class="container">
+  <div class="section-title" data-en="04 / Contact" data-id="04 / Kontak">04 / Kontak</div>
+  <h2 data-en="Let's Connect" data-id="Mari Terhubung">Mari Terhubung</h2>
+  <div class="contact-box">
+    <div>
+      <h3>Nazwa Aqilah Azzahra</h3>
+      <p data-en="Information Systems Student — UNESA" data-id="Mahasiswa Sistem Informasi — UNESA">Mahasiswa Sistem Informasi — UNESA</p>
+      <p><a href="mailto:26051214230@mhs.unesa.ac.id">26051214230@mhs.unesa.ac.id</a></p>
+    </div>
+    <div class="contact-links">
+      <a href="https://github.com/nnazwaazz" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="https://www.linkedin.com/in/nazw%D0%B0-aqilah-azzahra-09a58b403/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://drive.google.com/drive/folders/1El3cmOSQUeZhh4QORLXvJyVYJqSH36sJ" target="_blank" rel="noopener noreferrer" data-en="CV / Resume" data-id="CV / Resume">CV / Resume</a>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>© 2026 Nazwa Aqilah Azzahra. All Rights Reserved.</footer>
+
+<script>
+const btn = document.getElementById("languageToggle");
+let lang = "id";
+btn.addEventListener("click", function () {
+  lang = lang === "id" ? "en" : "id";
+  document.documentElement.lang = lang;
+  document.querySelectorAll("[data-en][data-id]").forEach(function (el) {
+    el.textContent = el.getAttribute("data-" + lang);
+  });
+  btn.textContent = lang === "id" ? "EN" : "ID";
+});
+</script>
+</body>
+</html>
